@@ -1,0 +1,1416 @@
+fileFormatVersion: 2
+guid: f3942bf716a18654587f0b43d10de51b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7496701368020607720
+    second: PC Computer - MapleStory - Omega Sector Tiles_0
+  - first:
+      213: 3594999858327753909
+    second: PC Computer - MapleStory - Omega Sector Tiles_1
+  - first:
+      213: 5470635060711666432
+    second: PC Computer - MapleStory - Omega Sector Tiles_2
+  - first:
+      213: 8587424884503668923
+    second: PC Computer - MapleStory - Omega Sector Tiles_3
+  - first:
+      213: -1824242094185550050
+    second: PC Computer - MapleStory - Omega Sector Tiles_4
+  - first:
+      213: -4421433171304450881
+    second: PC Computer - MapleStory - Omega Sector Tiles_5
+  - first:
+      213: 7985097442301921590
+    second: PC Computer - MapleStory - Omega Sector Tiles_6
+  - first:
+      213: 6777654573797287387
+    second: PC Computer - MapleStory - Omega Sector Tiles_7
+  - first:
+      213: 3777367940303365274
+    second: PC Computer - MapleStory - Omega Sector Tiles_8
+  - first:
+      213: 7468922562468961334
+    second: PC Computer - MapleStory - Omega Sector Tiles_9
+  - first:
+      213: 8468958273600937497
+    second: PC Computer - MapleStory - Omega Sector Tiles_10
+  - first:
+      213: 785469258355743754
+    second: PC Computer - MapleStory - Omega Sector Tiles_11
+  - first:
+      213: 4159646125186854425
+    second: PC Computer - MapleStory - Omega Sector Tiles_12
+  - first:
+      213: 8757323606445868644
+    second: PC Computer - MapleStory - Omega Sector Tiles_13
+  - first:
+      213: -1087716501552410794
+    second: PC Computer - MapleStory - Omega Sector Tiles_14
+  - first:
+      213: -121200567553918602
+    second: PC Computer - MapleStory - Omega Sector Tiles_15
+  - first:
+      213: 2342665564212669966
+    second: PC Computer - MapleStory - Omega Sector Tiles_16
+  - first:
+      213: 1659406868855118171
+    second: PC Computer - MapleStory - Omega Sector Tiles_17
+  - first:
+      213: 7805565975137138524
+    second: PC Computer - MapleStory - Omega Sector Tiles_18
+  - first:
+      213: 551802135997433315
+    second: PC Computer - MapleStory - Omega Sector Tiles_19
+  - first:
+      213: 5024457798003968474
+    second: PC Computer - MapleStory - Omega Sector Tiles_20
+  - first:
+      213: -998057355723304471
+    second: PC Computer - MapleStory - Omega Sector Tiles_21
+  - first:
+      213: -1470443593810317840
+    second: PC Computer - MapleStory - Omega Sector Tiles_22
+  - first:
+      213: -6419464113199892218
+    second: PC Computer - MapleStory - Omega Sector Tiles_23
+  - first:
+      213: -7039520242155893954
+    second: PC Computer - MapleStory - Omega Sector Tiles_24
+  - first:
+      213: 751268705896415894
+    second: PC Computer - MapleStory - Omega Sector Tiles_25
+  - first:
+      213: 3712667435947661411
+    second: PC Computer - MapleStory - Omega Sector Tiles_26
+  - first:
+      213: 5399070792439215728
+    second: PC Computer - MapleStory - Omega Sector Tiles_27
+  - first:
+      213: -2745439165757824374
+    second: PC Computer - MapleStory - Omega Sector Tiles_28
+  - first:
+      213: 594154749112816019
+    second: PC Computer - MapleStory - Omega Sector Tiles_29
+  - first:
+      213: -197902773076693246
+    second: PC Computer - MapleStory - Omega Sector Tiles_30
+  - first:
+      213: 1168723603682403780
+    second: PC Computer - MapleStory - Omega Sector Tiles_31
+  - first:
+      213: 51087794074187003
+    second: PC Computer - MapleStory - Omega Sector Tiles_32
+  - first:
+      213: -1535238776215701842
+    second: PC Computer - MapleStory - Omega Sector Tiles_33
+  - first:
+      213: 848368113631265553
+    second: PC Computer - MapleStory - Omega Sector Tiles_34
+  - first:
+      213: -5884468380566251192
+    second: PC Computer - MapleStory - Omega Sector Tiles_35
+  - first:
+      213: -1656968023790894700
+    second: PC Computer - MapleStory - Omega Sector Tiles_36
+  - first:
+      213: -702091488767921310
+    second: PC Computer - MapleStory - Omega Sector Tiles_37
+  - first:
+      213: -2701533109505961725
+    second: PC Computer - MapleStory - Omega Sector Tiles_38
+  - first:
+      213: 1382848883059977695
+    second: PC Computer - MapleStory - Omega Sector Tiles_39
+  - first:
+      213: -2464410219615731922
+    second: PC Computer - MapleStory - Omega Sector Tiles_40
+  - first:
+      213: -8729649006101841661
+    second: PC Computer - MapleStory - Omega Sector Tiles_41
+  - first:
+      213: -4870944009103632677
+    second: PC Computer - MapleStory - Omega Sector Tiles_42
+  - first:
+      213: 2030226474265586628
+    second: PC Computer - MapleStory - Omega Sector Tiles_43
+  - first:
+      213: -2733174931780150977
+    second: PC Computer - MapleStory - Omega Sector Tiles_44
+  - first:
+      213: 3980454942217512572
+    second: PC Computer - MapleStory - Omega Sector Tiles_45
+  - first:
+      213: -4454267601501242447
+    second: PC Computer - MapleStory - Omega Sector Tiles_46
+  - first:
+      213: -6705865722238634865
+    second: PC Computer - MapleStory - Omega Sector Tiles_47
+  - first:
+      213: -8237230934981374709
+    second: PC Computer - MapleStory - Omega Sector Tiles_48
+  - first:
+      213: -2730827448506629186
+    second: PC Computer - MapleStory - Omega Sector Tiles_49
+  - first:
+      213: 372655810194420985
+    second: PC Computer - MapleStory - Omega Sector Tiles_50
+  - first:
+      213: -4119087155809253162
+    second: PC Computer - MapleStory - Omega Sector Tiles_51
+  - first:
+      213: 8611291740069336766
+    second: PC Computer - MapleStory - Omega Sector Tiles_52
+  - first:
+      213: 7726293790595133376
+    second: PC Computer - MapleStory - Omega Sector Tiles_53
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 182
+        width: 90
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2ad0ccc22a90860800000000000000
+      internalID: 7496701368020607720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 182
+        width: 90
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b49433f25104e130800000000000000
+      internalID: 3594999858327753909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 182
+        width: 90
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00334816a999beb40800000000000000
+      internalID: 5470635060711666432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_3
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 232
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8e0303f69ac2770800000000000000
+      internalID: 8587424884503668923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_4
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 229
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f61c70b7dfea6e0800000000000000
+      internalID: -1824242094185550050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_5
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 229
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4f44ad4f9e3a2c0800000000000000
+      internalID: -4421433171304450881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_6
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 232
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639494121d3c0de60800000000000000
+      internalID: 7985097442301921590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_7
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 232
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd52d71ece01f0e50800000000000000
+      internalID: 6777654573797287387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_8
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 232
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a942bbbd028eb6430800000000000000
+      internalID: 3777367940303365274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_9
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 229
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cdcde9f71f6a760800000000000000
+      internalID: 7468922562468961334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_10
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 232
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ed69beda8c78570800000000000000
+      internalID: 8468958273600937497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_11
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 232
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c984ef02c86ea00800000000000000
+      internalID: 785469258355743754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_12
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 229
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ea713bc180ab930800000000000000
+      internalID: 4159646125186854425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_13
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 232
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4664959fb63488970800000000000000
+      internalID: 8757323606445868644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_14
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 232
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f43a4da97a7e0f0800000000000000
+      internalID: -1087716501552410794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_15
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 232
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6797f58d9b8615ef0800000000000000
+      internalID: -121200567553918602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_16
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 216
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0eaf6e2be1d28020800000000000000
+      internalID: 2342665564212669966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_17
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 216
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59d3fb51c5670710800000000000000
+      internalID: 1659406868855118171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_18
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 216
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57bce216e0f25c60800000000000000
+      internalID: 7805565975137138524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_19
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 216
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5cd6e7e1568a700800000000000000
+      internalID: 551802135997433315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_20
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 216
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9c7fe1fb57ab540800000000000000
+      internalID: 5024457798003968474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_21
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 213
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e195a67f103622f0800000000000000
+      internalID: -998057355723304471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_22
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 213
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fdefa8975fe79be0800000000000000
+      internalID: -1470443593810317840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_23
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 216
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6093a5c966b79e6a0800000000000000
+      internalID: -6419464113199892218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_24
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 216
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b402103a99e4e90800000000000000
+      internalID: -7039520242155893954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_25
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 216
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692c2d958ea0d6a00800000000000000
+      internalID: 751268705896415894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_26
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 216
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36812d8cc5b068330800000000000000
+      internalID: 3712667435947661411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_27
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 216
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076b68cb74a5dea40800000000000000
+      internalID: 5399070792439215728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_28
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 182
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a826f8cef9d36e9d0800000000000000
+      internalID: -2745439165757824374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_29
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 182
+        width: 57
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3911b7aa89cde3800800000000000000
+      internalID: 594154749112816019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_30
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 200
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fe2b6f978e04df0800000000000000
+      internalID: -197902773076693246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_31
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 200
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5aa16ece3283010800000000000000
+      internalID: 1168723603682403780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_32
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 197
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4762af31085b000800000000000000
+      internalID: 51087794074187003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_33
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 200
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6f142977cb1bae0800000000000000
+      internalID: -1535238776215701842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_34
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 200
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11382c3fd4206cb00800000000000000
+      internalID: 848368113631265553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_35
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 200
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84994546f2b265ea0800000000000000
+      internalID: -5884468380566251192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_36
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 200
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49143c18c544109e0800000000000000
+      internalID: -1656968023790894700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_37
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 200
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263b924c28ba146f0800000000000000
+      internalID: -702091488767921310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_38
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 142
+        width: 90
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301d0f243f9328ad0800000000000000
+      internalID: -2701533109505961725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_39
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 142
+        width: 90
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdde5d48bbdd03310800000000000000
+      internalID: 1382848883059977695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_40
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 142
+        width: 90
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f36f656f7accdd0800000000000000
+      internalID: -2464410219615731922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_41
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 134
+        width: 90
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30935790b7e0ad680800000000000000
+      internalID: -8729649006101841661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_42
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 112
+        width: 90
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd69f882b3ee66cb0800000000000000
+      internalID: -4870944009103632677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_43
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 142
+        width: 90
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cba134c830dc2c10800000000000000
+      internalID: 2030226474265586628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_44
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 42
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39dd3a61efc11ad0800000000000000
+      internalID: -2733174931780150977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_45
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 42
+        width: 21
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76a25b3eaa6d3730800000000000000
+      internalID: 3980454942217512572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_46
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 42
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbbcf557334f22c0800000000000000
+      internalID: -4454267601501242447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_47
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 42
+        width: 29
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f847f72a7aaffe2a0800000000000000
+      internalID: -6705865722238634865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_48
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 42
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d839b7b1a7fad80800000000000000
+      internalID: -8237230934981374709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_49
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 42
+        width: 24
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb340e477e62a1ad0800000000000000
+      internalID: -2730827448506629186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_50
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 5
+        width: 90
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4bf162c70fb2500800000000000000
+      internalID: 372655810194420985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_51
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 5
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d88d1f3e0016d6c0800000000000000
+      internalID: -4119087155809253162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_52
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 5
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb696188634718770800000000000000
+      internalID: 8611291740069336766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Omega Sector Tiles_53
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 5
+        width: 90
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfaab2544f493b60800000000000000
+      internalID: 7726293790595133376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
