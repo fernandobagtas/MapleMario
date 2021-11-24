@@ -5,15 +5,19 @@ public class CharacterController2D : MonoBehaviour
 {
 	[SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
 	[Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;			// Amount of maxSpeed applied to crouching movement. 1 = 100%
-	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
+	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;  // How much to smooth out the movement
+	[SerializeField] private bool m_AirJump = false;							// Whether or not a player can jump in the air
 	[SerializeField] private bool m_AirControl = false;							// Whether or not a player can steer while jumping;
 	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
 	[SerializeField] private Transform m_GroundCheck;							// A position marking where to check if the player is grounded.
 	[SerializeField] private Transform m_CeilingCheck;							// A position marking where to check for ceilings
-	[SerializeField] private Collider2D m_CrouchDisableCollider;				// A collider that will be disabled when crouching
+	[SerializeField] private Collider2D m_CrouchDisableCollider;                // A collider that will be disabled when crouching
+	public Animator Animator;
 
 	const float k_GroundedRadius = .05f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
+	private bool m_Aerial;              //Whether of not the player is in the air
+	private bool m_AirJumpCheck;		//Check if the player has not jumped in the air or not
 	const float k_CeilingRadius = .1f; // Radius of the overlap circle to determine if the player can stand up
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
@@ -39,14 +43,33 @@ public class CharacterController2D : MonoBehaviour
 
 		if (OnCrouchEvent == null)
 			OnCrouchEvent = new BoolEvent();
+
+		//init value for Air Jumping
+		if (m_AirJump)
+		{
+			m_AirJumpCheck = true;
+		}
+		else
+		{
+			m_AirJumpCheck = false;
+		}
 	}
 
 	private void FixedUpdate()
 	{
+		if (!m_Grounded)
+		{
+			m_Aerial = true;
+
+			if (m_AirJumpCheck)
+			{
+				Animator.SetBool("isJumping", true);
+			}
+		}
+
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
 
-		Debug.Log("Grounded: " + wasGrounded);
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 		// This can be done using layers instead but Sample Assets will not overwrite your project settings.
 		Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
@@ -54,11 +77,11 @@ public class CharacterController2D : MonoBehaviour
 		{
 			if (colliders[i].gameObject != gameObject)
 			{
-				Debug.Log("GameObject: " + colliders[i]);
-				m_Grounded = true;
+				m_Grounded = true;	//if player is on the ground....
+				m_Aerial = false;	//.... then he ain't in the air LMAO
+				m_AirJumpCheck = true; //reset air jump when he lands
 				if (!wasGrounded)
 				{
-					Debug.Log(gameObject + " Collided with: " + colliders[i]);
 					OnLandEvent.Invoke();
 				}
 			}
@@ -129,10 +152,20 @@ public class CharacterController2D : MonoBehaviour
 			}
 		}
 		// If the player should jump...
-		if (m_Grounded && jump)
+		if ((m_Grounded || (m_Aerial && m_AirJumpCheck)) && jump)
 		{
-			// Add a vertical force to the player.
+			//..first reset y velocity so no existing force will affect the jump...
+			m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0f);
+			//...and then add a vertical force to the player.
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+
+			if (m_Aerial)
+			{
+				Animator.SetBool("isJumping", false);
+				Animator.SetBool("isDJumping", true);
+				m_AirJumpCheck = false; //Dude jumped in the air so he can't jump anymore
+			}
+
 			//this is commented out because the jump animation breaks with this.
 			//The animation change from jump to walk/idle works by checking if the player changes from not grounded to grounded.
 			//This forces the game to think that the player is not grounded when he hasnt even left the ground yet so

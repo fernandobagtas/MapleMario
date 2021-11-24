@@ -259,7 +259,7 @@ GameObject:
   m_Layer: 6
   m_Name: Ground Tile 1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -289,7 +289,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 8461650366806872828}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 38f59c9b0594c3243a9a969bd1e1e33f, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
