@@ -17,16 +17,17 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private Transform[] groundTiles;
     [SerializeField] private GameObject player;
 
-    private float tileWidth = 1.79f;
-    private float tileHeight = 1.19f;
+    private float tileWidth = 1.79f;    //Width that is shared with all the tiles
+    private float tileHeight = 1.19f;   //Height of the mid tiles
 
-    private float lastTileHeight;
+    //stores the position of the latest tile placed (for height, it also gets reset to 0f when the program is done spawning the pillar of tiles) 
+    private float lastTileHeight;       
     private float lastTileXPos;
 
     private void Awake()
     {
         lastTileHeight = 0f;
-        lastTileXPos = tileWidth * 4;
+        lastTileXPos = tileWidth * 4; //preset this because I have 4 tiles preset already before the game even starts (look at the scene view in Unity before you start it)
 
         for (int i = 0; i < 6; i++)
         {
@@ -37,34 +38,75 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distance = lastTileXPos - player.transform.position.x;
+        float distance = lastTileXPos - player.transform.position.x; //get distance between the player and the last tile spawned
         Debug.Log("Tile: " + lastTileXPos + "\nPlayer: " + player.transform.position.x + "\nDistance: " + distance);
+
         if (distance < PLAYER_DISTANCE_SPAWN_TILE)
         {
+            //(int Random.Range is minInclusive, maxExclusive)
+            //(float Random.Range is minInclusive, maxInclusive)
+
+            int styleRand = Random.Range(0, 2);     //select by random if is will spawn a pillar of tiles or a platform of tiles (0 for pillar, 1 for tiles)
+            Debug.Log("styleRand: " + styleRand);
+
+            int spaceRand = Random.Range(0, 9);     //how many spaces should there be before the next set of tiles can spawn
+            Debug.Log("spaceRand: " + spaceRand);
+            lastTileXPos += (tileWidth * spaceRand);
+
+            int lengthRand = Random.Range(1, 10);   //how long will the next set of tiles be
+            Debug.Log("lengthRand: " + lengthRand);
+
+
+            //how high will the next set of tiles be
+            //limit the height of the next tiles to spawn so it's still possible for the player to traverse them vertically
             int lowerSpawnLimit;
-            if (((int)player.transform.position.y - 6) < 0) lowerSpawnLimit = 0;
+            if (((int)player.transform.position.y - 6) < 1) lowerSpawnLimit = 1;
             else lowerSpawnLimit = (int)player.transform.position.y - 6;
 
             int upperSpawnLimit;
-            if (((int)player.transform.position.y + 6) > 20) upperSpawnLimit = 20;
+            if (((int)player.transform.position.y + 6) > 15) upperSpawnLimit = 15;
             else upperSpawnLimit = ((int)player.transform.position.y + 6);
 
-            int rand = Random.Range(lowerSpawnLimit, upperSpawnLimit);
-            Debug.Log("UpperSpawnLimit: " + upperSpawnLimit + "\nLowerSpawnLimit: " + lowerSpawnLimit + "\nRand: " + rand);
+            int heightRand = Random.Range(lowerSpawnLimit, upperSpawnLimit);
+            Debug.Log("UpperSpawnLimit: " + upperSpawnLimit + "\nLowerSpawnLimit: " + lowerSpawnLimit + "\nRand: " + heightRand);
 
-            if (rand > 0)
+            if(styleRand == 0)
             {
-                if(rand == 1)
+                for(int i = 0; i < lengthRand; i++)
+                {
+                    if (heightRand == 1)
+                    {
+                        spawnGroundTile();
+                    }
+                    else
+                    {
+                        spawnBottomTiles();
+                        spawnMidTiles(heightRand - 2);
+                        spawnTopTiles();
+                    }
+                }
+            }
+            else if(styleRand == 1)
+            {
+                for (int i = 0; i < lengthRand; i++)
+                {
+                    spawnPlatformTiles(heightRand);
+                }
+            }
+            /*
+            if (heightRand > 0)
+            {
+                if(heightRand == 1)
                 {
                     spawnGroundTile();
                 }
                 else
                 {
                     spawnBottomTiles();
-                    spawnMidTiles(rand - 2);
+                    spawnMidTiles(heightRand - 2);
                     spawnTopTiles();
                 }
-            }
+            }*/
         }
 
         player = GameObject.Find("Player");
@@ -102,5 +144,12 @@ public class LevelGenerator : MonoBehaviour
         int rand = Random.Range(0, groundTiles.Length);
         lastTileXPos += tileWidth;
         Instantiate(groundTiles[rand], new Vector3(lastTileXPos, groundTiles[rand].position.y), Quaternion.identity);
+    }
+
+    private void spawnPlatformTiles(float height)
+    {
+        int rand = Random.Range(0, groundTiles.Length);
+        lastTileXPos += tileWidth;
+        Instantiate(groundTiles[rand], new Vector3(lastTileXPos, height), Quaternion.identity);
     }
 }

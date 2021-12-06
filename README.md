@@ -2,6 +2,8 @@
 2D platformer game that I am currently working on right now.
 
 TODO List:
-  - Implement level generation file and modify it to this game's needs
-  - Implement double jump and dash
+  - Implement dash
   - Implement scoring system 
+  - Implement Memory Management (add a queue and store all the tiles as arrays from when they first spawned and deinstantiate whenever the queue fills up)
+  - Implement death condition
+  - Modify camera control maybe? IDK yet
