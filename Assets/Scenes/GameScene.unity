@@ -531,6 +531,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &1103501567 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5082095867291816528, guid: be1184957b962914aa5726a95d4959d8, type: 3}
+  m_PrefabInstance: {fileID: 3401597582570082614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1261082826
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,6 +582,7 @@ MonoBehaviour:
   - {fileID: 1052530743022559518, guid: 2a258c110b3a9d4429163755b9d300f0, type: 3}
   - {fileID: 254930353527807792, guid: aa5ee1b00d84c4c4abde80708cba2c62, type: 3}
   player: {fileID: 1062282112}
+  invisWall: {fileID: 1103501567}
 --- !u!4 &1261082828
 Transform:
   m_ObjectHideFlags: 0
@@ -1035,6 +1041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Invisible Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 3501722007257567780, guid: be1184957b962914aa5726a95d4959d8, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 38f59c9b0594c3243a9a969bd1e1e33f, type: 2}
     - target: {fileID: 5082095867291816528, guid: be1184957b962914aa5726a95d4959d8, type: 3}
       propertyPath: m_RootOrder
       value: 17
