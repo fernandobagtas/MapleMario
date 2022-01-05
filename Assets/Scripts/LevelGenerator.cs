@@ -2,6 +2,13 @@
  * 
  * NOTE: Remember to set the Y position of the prefabs so that the tiles line up at the bottom
  *       Use yPosition = (yCoordinate + ((sizeOfPrefab - 1) / 2))
+ *       
+ *       
+ *       
+ * TODO: Add death condition when player falls beyond the platforms (beond a certain y position maybe)
+ *       Main menu and pause menu 
+ *          Doesnt have to be complex. Just a play and quit for the main menu and quit and reset for the pause menu is fine
+ *       Increasing difficulty as the player goes on (increase space between tile spawns and descrease length of tile spawns maybe?)
  */
 using System.Collections;
 using System.Collections.Generic;
@@ -16,6 +23,7 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private Transform[] bottomTiles;
     [SerializeField] private Transform[] groundTiles;
     [SerializeField] private GameObject player;
+    [SerializeField] private Transform invisWall;
 
     private float tileWidth = 1.79f;    //Width that is shared with all the tiles
     private float tileHeight = 1.19f;   //Height of the mid tiles
@@ -24,6 +32,8 @@ public class LevelGenerator : MonoBehaviour
     private float lastTileHeight;       
     private float lastTileXPos;
 
+    private Queue<List<Transform>> tileQueue = new Queue<List<Transform>>(); //store game objects spawned here to I can destroy them later once enough has spawned
+
     private void Awake()
     {
         lastTileHeight = 0f;
@@ -31,7 +41,11 @@ public class LevelGenerator : MonoBehaviour
 
         for (int i = 0; i < 6; i++)
         {
-            spawnGroundTile();
+            //spawnGroundTile();
+
+            int rand = Random.Range(0, groundTiles.Length);
+            lastTileXPos += tileWidth;
+            Instantiate(groundTiles[rand], new Vector3(lastTileXPos, groundTiles[rand].position.y), Quaternion.identity);
         }
     }
 
@@ -39,21 +53,30 @@ public class LevelGenerator : MonoBehaviour
     void Update()
     {
         float distance = lastTileXPos - player.transform.position.x; //get distance between the player and the last tile spawned
-        Debug.Log("Tile: " + lastTileXPos + "\nPlayer: " + player.transform.position.x + "\nDistance: " + distance);
+        Debug.Log("Tile: " + lastTileXPos + "\nPlayer: " + player.transform.position.x + "\nDistance: " + distance + "\nQueueCount: " + tileQueue.Count + "\nWall XPos: " + invisWall.position.x);
 
-        if (distance < PLAYER_DISTANCE_SPAWN_TILE)
+        if (distance < PLAYER_DISTANCE_SPAWN_TILE) //spawn more tiles if the player gets close enough to the last spawned tile
         {
+            //This should delete old tiles to make room for the new tiles 
+            if (tileQueue.Count > 10)
+            {
+                List<Transform> tilesToDelete = tileQueue.Dequeue();//remove old tiles from the queue and...
+                destoryTiles(tilesToDelete);                        //...destroy them
+
+                invisWall.position = new Vector3(tileQueue.Peek()[0].position.x, 0); //move invisible wall to the next tile to be destroyed
+            }
+
             //(int Random.Range is minInclusive, maxExclusive)
             //(float Random.Range is minInclusive, maxInclusive)
 
             int styleRand = Random.Range(0, 2);     //select by random if is will spawn a pillar of tiles or a platform of tiles (0 for pillar, 1 for tiles)
             Debug.Log("styleRand: " + styleRand);
 
-            int spaceRand = Random.Range(0, 9);     //how many spaces should there be before the next set of tiles can spawn
+            int spaceRand = Random.Range(0, 9);     //how many spaces should there be before the next set of tiles can spawn (0 - 8)
             Debug.Log("spaceRand: " + spaceRand);
             lastTileXPos += (tileWidth * spaceRand);
 
-            int lengthRand = Random.Range(1, 10);   //how long will the next set of tiles be
+            int lengthRand = Random.Range(1, 10);   //how long will the next set of tiles be (1 - 9)
             Debug.Log("lengthRand: " + lengthRand);
 
 
@@ -70,19 +93,21 @@ public class LevelGenerator : MonoBehaviour
             int heightRand = Random.Range(lowerSpawnLimit, upperSpawnLimit);
             Debug.Log("UpperSpawnLimit: " + upperSpawnLimit + "\nLowerSpawnLimit: " + lowerSpawnLimit + "\nRand: " + heightRand);
 
+            List<Transform> spawnedTiles = new List<Transform>();
+
             if(styleRand == 0)
             {
                 for(int i = 0; i < lengthRand; i++)
                 {
                     if (heightRand == 1)
                     {
-                        spawnGroundTile();
+                        spawnGroundTile(spawnedTiles);
                     }
                     else
                     {
-                        spawnBottomTiles();
-                        spawnMidTiles(heightRand - 2);
-                        spawnTopTiles();
+                        spawnBottomTiles(spawnedTiles);
+                        spawnMidTiles(heightRand - 2, spawnedTiles);
+                        spawnTopTiles(spawnedTiles);
                     }
                 }
             }
@@ -90,9 +115,11 @@ public class LevelGenerator : MonoBehaviour
             {
                 for (int i = 0; i < lengthRand; i++)
                 {
-                    spawnPlatformTiles(heightRand);
+                    spawnPlatformTiles(heightRand, spawnedTiles);
                 }
             }
+
+            tileQueue.Enqueue(spawnedTiles); //put list of tiles spawned into a queue for destroying later. 
             /*
             if (heightRand > 0)
             {
@@ -112,44 +139,61 @@ public class LevelGenerator : MonoBehaviour
         player = GameObject.Find("Player");
     }
 
-    private void spawnTopTiles()
+    private void spawnTopTiles(List<Transform> tileList)
     {
         int rand = Random.Range(0, topTiles.Length);
-        Instantiate(topTiles[rand], new Vector3(lastTileXPos, lastTileHeight + tileHeight), Quaternion.identity);
 
-        lastTileHeight = 0f; //reset tile height for next set of tiles
+        Transform tile = Instantiate(topTiles[rand], new Vector3(lastTileXPos, lastTileHeight + tileHeight), Quaternion.identity); //init tile to game 
+        tileList.Add(tile);     //shove tile to list for deletion later
+        lastTileHeight = 0f;    //reset tile height for next set of tiles
     }
 
-    private void spawnMidTiles(int stackSize)
+    private void spawnMidTiles(int stackSize, List<Transform> tileList)
     {
         for (int i = 0; i < stackSize; i++)
         {
             int rand = Random.Range(0, midTiles.Length);
+
             lastTileHeight += tileHeight; //increment tile height
-            Instantiate(midTiles[rand], new Vector3(lastTileXPos, lastTileHeight), Quaternion.identity);
+            Transform tile = Instantiate(midTiles[rand], new Vector3(lastTileXPos, lastTileHeight), Quaternion.identity);
+            tileList.Add(tile);
         }
 
     }
 
-    private void spawnBottomTiles()
+    private void spawnBottomTiles(List<Transform> tileList)
     {
         int rand = Random.Range(0, bottomTiles.Length);
+
         lastTileXPos += tileWidth; //increment tile x position for next set of tiles
-        Instantiate(bottomTiles[rand], new Vector3(lastTileXPos, lastTileHeight), Quaternion.identity);
+        Transform tile = Instantiate(bottomTiles[rand], new Vector3(lastTileXPos, lastTileHeight), Quaternion.identity);
+        tileList.Add(tile);
     }
 
     //Spawns ground tiles (has components of a top, middle, and bottom tile)
-    private void spawnGroundTile()
+    private void spawnGroundTile(List<Transform> tileList)
     {
         int rand = Random.Range(0, groundTiles.Length);
+
         lastTileXPos += tileWidth;
-        Instantiate(groundTiles[rand], new Vector3(lastTileXPos, groundTiles[rand].position.y), Quaternion.identity);
+        Transform tile = Instantiate(groundTiles[rand], new Vector3(lastTileXPos, groundTiles[rand].position.y), Quaternion.identity);
+        tileList.Add(tile);
     }
 
-    private void spawnPlatformTiles(float height)
+    private void spawnPlatformTiles(float height, List<Transform> tileList)
     {
         int rand = Random.Range(0, groundTiles.Length);
+
         lastTileXPos += tileWidth;
-        Instantiate(groundTiles[rand], new Vector3(lastTileXPos, height), Quaternion.identity);
+        Transform tile = Instantiate(groundTiles[rand], new Vector3(lastTileXPos, height), Quaternion.identity);
+        tileList.Add(tile);
+    }
+
+    private void destoryTiles(List<Transform> tilesToDelete)
+    {
+        for (int i = 0; i < tilesToDelete.Count; i++)
+        {
+            Destroy(tilesToDelete[i].gameObject);
+        }
     }
 }
