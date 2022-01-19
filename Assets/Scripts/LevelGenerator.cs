@@ -13,6 +13,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelGenerator : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private Transform[] groundTiles;
     [SerializeField] private GameObject player;
     [SerializeField] private Transform invisWall;
+    [SerializeField] private GameOverScreen gameOverScreen;
 
     private float tileWidth = 1.79f;    //Width that is shared with all the tiles
     private float tileHeight = 1.19f;   //Height of the mid tiles
@@ -54,6 +56,11 @@ public class LevelGenerator : MonoBehaviour
     {
         float distance = lastTileXPos - player.transform.position.x; //get distance between the player and the last tile spawned
         Debug.Log("Tile: " + lastTileXPos + "\nPlayer: " + player.transform.position.x + "\nDistance: " + distance + "\nQueueCount: " + tileQueue.Count + "\nWall XPos: " + invisWall.position.x);
+
+        if(player.transform.position.y <= -10) //if player falls down, game over
+        {
+            GameOver();
+        }
 
         if (distance < PLAYER_DISTANCE_SPAWN_TILE) //spawn more tiles if the player gets close enough to the last spawned tile
         {
@@ -195,5 +202,11 @@ public class LevelGenerator : MonoBehaviour
         {
             Destroy(tilesToDelete[i].gameObject);
         }
+    }
+
+    private void GameOver()
+    {
+        Time.timeScale = 0;
+        gameOverScreen.Setup(Mathf.RoundToInt(player.transform.position.x)); //send over the distance the player travelled to show on the game over screen
     }
 }
