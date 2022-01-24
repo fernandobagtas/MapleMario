@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameOverScreen : MonoBehaviour
 {
-    public Text distanceText;
+    public TextMeshProUGUI distanceText;
 
     public void Setup(int score)
     {
+        Time.timeScale = 0;
         gameObject.SetActive(true);
         distanceText.text = "Distance reached: \n" + score.ToString() + " meters";
     }

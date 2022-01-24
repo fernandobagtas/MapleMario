@@ -38,6 +38,7 @@ public class LevelGenerator : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1; //reset timescale to 1 (meaning normal runtime) when it gets set to 0 on death
         lastTileHeight = 0f;
         lastTileXPos = tileWidth * 4; //preset this because I have 4 tiles preset already before the game even starts (look at the scene view in Unity before you start it)
 
@@ -54,8 +55,9 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(Time.timeScale);
         float distance = lastTileXPos - player.transform.position.x; //get distance between the player and the last tile spawned
-        Debug.Log("Tile: " + lastTileXPos + "\nPlayer: " + player.transform.position.x + "\nDistance: " + distance + "\nQueueCount: " + tileQueue.Count + "\nWall XPos: " + invisWall.position.x);
+        //Debug.Log("Tile: " + lastTileXPos + "\nPlayer: " + player.transform.position.x + "\nDistance: " + distance + "\nQueueCount: " + tileQueue.Count + "\nWall XPos: " + invisWall.position.x);
 
         if(player.transform.position.y <= -10) //if player falls down, game over
         {
@@ -77,14 +79,14 @@ public class LevelGenerator : MonoBehaviour
             //(float Random.Range is minInclusive, maxInclusive)
 
             int styleRand = Random.Range(0, 2);     //select by random if is will spawn a pillar of tiles or a platform of tiles (0 for pillar, 1 for tiles)
-            Debug.Log("styleRand: " + styleRand);
+            //Debug.Log("styleRand: " + styleRand);
 
             int spaceRand = Random.Range(0, 9);     //how many spaces should there be before the next set of tiles can spawn (0 - 8)
-            Debug.Log("spaceRand: " + spaceRand);
+            //Debug.Log("spaceRand: " + spaceRand);
             lastTileXPos += (tileWidth * spaceRand);
 
             int lengthRand = Random.Range(1, 10);   //how long will the next set of tiles be (1 - 9)
-            Debug.Log("lengthRand: " + lengthRand);
+            //Debug.Log("lengthRand: " + lengthRand);
 
 
             //how high will the next set of tiles be
@@ -98,7 +100,7 @@ public class LevelGenerator : MonoBehaviour
             else upperSpawnLimit = ((int)player.transform.position.y + 6);
 
             int heightRand = Random.Range(lowerSpawnLimit, upperSpawnLimit);
-            Debug.Log("UpperSpawnLimit: " + upperSpawnLimit + "\nLowerSpawnLimit: " + lowerSpawnLimit + "\nRand: " + heightRand);
+            //Debug.Log("UpperSpawnLimit: " + upperSpawnLimit + "\nLowerSpawnLimit: " + lowerSpawnLimit + "\nRand: " + heightRand);
 
             List<Transform> spawnedTiles = new List<Transform>();
 
@@ -206,7 +208,6 @@ public class LevelGenerator : MonoBehaviour
 
     private void GameOver()
     {
-        Time.timeScale = 0;
         gameOverScreen.Setup(Mathf.RoundToInt(player.transform.position.x)); //send over the distance the player travelled to show on the game over screen
     }
 }
