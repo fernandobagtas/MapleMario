@@ -13,11 +13,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class LevelGenerator : MonoBehaviour
 {
-    private const float PLAYER_DISTANCE_SPAWN_TILE = 20f;
+    private const float PLAYER_DISTANCE_SPAWN_TILE = 100f;
 
     [SerializeField] private Transform[] topTiles;
     [SerializeField] private Transform[] midTiles;
@@ -27,8 +29,15 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private Transform invisWall;
     [SerializeField] private GameOverScreen gameOverScreen;
 
+    [SerializeField] private TextMeshProUGUI distanceText;
+
     private float tileWidth = 1.79f;    //Width that is shared with all the tiles
     private float tileHeight = 1.19f;   //Height of the mid tiles
+
+    private int spaceUpperLimit;
+    private int spaceLowerLimit;
+    private int lengthUpperLimit;
+    private int lengthLowerLimit;
 
     //stores the position of the latest tile placed (for height, it also gets reset to 0f when the program is done spawning the pillar of tiles) 
     private float lastTileHeight;       
@@ -41,6 +50,34 @@ public class LevelGenerator : MonoBehaviour
         Time.timeScale = 1; //reset timescale to 1 (meaning normal runtime) when it gets set to 0 on death
         lastTileHeight = 0f;
         lastTileXPos = tileWidth * 4; //preset this because I have 4 tiles preset already before the game even starts (look at the scene view in Unity before you start it)
+
+        switch (GameStateController.difficultySetting) //set up upper limits to the space gaps and length of platforms
+        {
+            case 0:
+                spaceUpperLimit = 3;
+                spaceLowerLimit = 0;
+                lengthUpperLimit = 10;
+                lengthLowerLimit = 7;
+                break;
+            case 1:
+                spaceUpperLimit = 7;
+                spaceLowerLimit = 2;
+                lengthUpperLimit = 7;
+                lengthLowerLimit = 3;
+                break;
+            case 2:
+                spaceUpperLimit = 9;
+                spaceLowerLimit = 6;
+                lengthUpperLimit = 4;
+                lengthLowerLimit = 1;
+                break;
+            default:
+                spaceUpperLimit = 6;
+                spaceLowerLimit = 3;
+                lengthUpperLimit = 7;
+                lengthLowerLimit = 4;
+                break;
+        }
 
         for (int i = 0; i < 6; i++)
         {
@@ -55,11 +92,11 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Time.timeScale);
+        distanceText.text = Mathf.RoundToInt(player.transform.position.x).ToString() + "m"; //show player their progression
         float distance = lastTileXPos - player.transform.position.x; //get distance between the player and the last tile spawned
         //Debug.Log("Tile: " + lastTileXPos + "\nPlayer: " + player.transform.position.x + "\nDistance: " + distance + "\nQueueCount: " + tileQueue.Count + "\nWall XPos: " + invisWall.position.x);
 
-        if(player.transform.position.y <= -10) //if player falls down, game over
+        if (player.transform.position.y <= -10) //if player falls down, game over
         {
             GameOver();
         }
@@ -81,11 +118,11 @@ public class LevelGenerator : MonoBehaviour
             int styleRand = Random.Range(0, 2);     //select by random if is will spawn a pillar of tiles or a platform of tiles (0 for pillar, 1 for tiles)
             //Debug.Log("styleRand: " + styleRand);
 
-            int spaceRand = Random.Range(0, 9);     //how many spaces should there be before the next set of tiles can spawn (0 - 8)
+            int spaceRand = Random.Range(spaceLowerLimit, spaceUpperLimit);     //how many spaces should there be before the next set of tiles can spawn (0 - 8)
             //Debug.Log("spaceRand: " + spaceRand);
             lastTileXPos += (tileWidth * spaceRand);
 
-            int lengthRand = Random.Range(1, 10);   //how long will the next set of tiles be (1 - 9)
+            int lengthRand = Random.Range(lengthLowerLimit, lengthUpperLimit);   //how long will the next set of tiles be (1 - 9)
             //Debug.Log("lengthRand: " + lengthRand);
 
 
